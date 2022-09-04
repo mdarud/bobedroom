@@ -8,7 +8,6 @@ import "./home.css";
 import { Row, Col } from "react-bootstrap";
 
 const Home = () => {
-
   const particlesInit = React.useCallback(async (engine) => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -23,9 +22,9 @@ const Home = () => {
 
   return (
     <div className="scroll-container">
-      <section >
+      <section>
         <div className="starter">
-          <img src='/logo-white.svg' className='logo' alt="pic" />
+          <embed src="/logo-white.svg" className="logo" alt="pic" />
           <Particles
             id="tsparticles"
             init={particlesInit}
@@ -85,8 +84,8 @@ const Home = () => {
                   trail: {
                     enable: true,
                     fillColor: "#000000",
-                    length: 5
-                  }
+                    length: 5,
+                  },
                 },
                 number: {
                   value: 0,
@@ -107,79 +106,170 @@ const Home = () => {
                 direction: "none",
                 rate: {
                   delay: 0.5,
-                  quantity: 10
+                  quantity: 10,
                 },
                 position: {
                   x: 50,
-                  y: 50
+                  y: 50,
                 },
                 size: {
                   width: 5,
-                  height: 5
+                  height: 5,
                 },
-              }
-            }
-            }
+              },
+            }}
           />
         </div>
         <div className="social-media">
-          <a href="https://github.com/mdarud" target="_blank" rel="noreferrer" className="icon"><img src="/github.png" alt="pic" width={32} /></a>
-          <a href="https://www.linkedin.com/in/muhammad-daru-darmakusuma/" target="_blank" rel="noreferrer" className="icon"><img src="/linkedin.png" alt="pic" width={32} /></a>
-          <a href="https://www.instagram.com/drmksm/" target="_blank" rel="noreferrer" className="icon"><img src="/instagram.svg" alt="pic" width={35} /></a>
-          <a href="https://soundcloud.com/darmakusuma" target="_blank" rel="noreferrer" className="icon"><img src="/soundcloud.png" alt="pic" width={32} /></a>
-          <a href="https://open.spotify.com/user/217hkxsfr3gafn62eqj65p4gi?si=7fTNLgL6TmiLDsCvokhjqw&nd=1" target="_blank" rel="noreferrer"><img src="/spotify.png" alt="pic" width={32} /></a>
+          <a
+            href="https://github.com/mdarud"
+            target="_blank"
+            rel="noreferrer"
+            className="icon"
+          >
+            <img src="/github.png" alt="pic" width={32} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/muhammad-daru-darmakusuma/"
+            target="_blank"
+            rel="noreferrer"
+            className="icon"
+          >
+            <img src="/linkedin.png" alt="pic" width={32} />
+          </a>
+          <a
+            href="https://www.instagram.com/drmksm/"
+            target="_blank"
+            rel="noreferrer"
+            className="icon"
+          >
+            <img src="/instagram.svg" alt="pic" width={35} />
+          </a>
+          <a
+            href="https://soundcloud.com/darmakusuma"
+            target="_blank"
+            rel="noreferrer"
+            className="icon"
+          >
+            <img src="/soundcloud.png" alt="pic" width={32} />
+          </a>
+          <a
+            href="https://open.spotify.com/user/217hkxsfr3gafn62eqj65p4gi?si=7fTNLgL6TmiLDsCvokhjqw&nd=1"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="/spotify.png" alt="pic" width={32} />
+          </a>
         </div>
-        <div className="instruction">Scroll Down!<p class="scrollto--arrow"><img src="/scroll-down.png" alt="scroll down arrow" /></p></div>
-      </section >
+        <div className="instruction">
+          Scroll Down!
+          <p class="scrollto--arrow">
+            <img src="/scroll-down.png" alt="scroll down arrow" />
+          </p>
+        </div>
+      </section>
 
-      <section className="main" id="main">
-        <Header />
-        <Highlights />
-        <div className="intro">Hello! I'm...</div>
-        <TypeAnimation
-          sequence={[
-            'Muhammad Daru Darmakusuma', // Types 'One'
-            3000, // Waits 1s
-            'Daru', // Deletes 'One' and types 'Two'
-            3000, // Waits 2s
-            'Bobby', // Types 'Three' without deleting 'Two'
-            3000, // Waits 2s
-            'Bo',
-            2000, // Types 'Three' without deleting 'Two'
-            () => {
-              console.log('Done typing!'); // Place optional callbacks anywhere in the array
-            }
-          ]}
-          wrapper="div"
-          cursor={true}
-          repeat={Infinity}
-          style={{ fontSize: '2em' }}
-          className="intro-name"
-        />
-        <div className="about-me">
-          <div className="about-me-label"><div className="me-label">ABOUT ME</div></div>
-          <div className="about-me-text">I'm a final year Computer Science student at Institut Teknologi Bandung. I was born on October, 29th 2002. I'm born and raised in Bandung. Welcome to my website!! I like to produce music, graphic design, and draw. And in my spare time, I like to watch movies and listen to music. I find many outdoor activities is relieving :D
-            <div className="porto">
-              <div className="projects">
-                Projects
-                <Row className="projects-type">
-                  <Col><a href="/code"><img src="/code.png" width={60} className="icon-projects" alt="pic" /> <div className="project-label">Code</div></a></Col>
-                  <Col><a href="/design"><img src="/design.png" width={60} className="icon-projects" alt="pic" /> <div className="project-label">Design</div></a></Col>
-                  <Col><a href="/music"><img src="/music.png" width={60} className="icon-projects" alt="pic" /><div className="project-label">Music</div></a></Col>
-                </Row>
-              </div>
-              <div className="blogs">
-                Blogs
-                <Row className="projects-type">
-                  <Col> <img src="/blog.png" width={60} className="icon-projects" alt="pic" /> <div className="project-label" style={{ marginTop: "-5px" }}>Posts</div></Col>
-                </Row>
+      <section id="main" className="main">
+        <div className="section-break"></div>
+        <div className="main-wrapper">
+          <Header />
+          <Highlights />
+          <div className="intro">Hello! I'm...</div>
+          <TypeAnimation
+            sequence={[
+              "Muhammad Daru Darmakusuma", // Types 'One'
+              3000, // Waits 1s
+              "Daru", // Deletes 'One' and types 'Two'
+              3000, // Waits 2s
+              "Bobby", // Types 'Three' without deleting 'Two'
+              3000, // Waits 2s
+              "Bo",
+              2000, // Types 'Three' without deleting 'Two'
+              () => {
+                console.log("Done typing!"); // Place optional callbacks anywhere in the array
+              },
+            ]}
+            wrapper="div"
+            cursor={true}
+            repeat={Infinity}
+            style={{ fontSize: "2em" }}
+            className="intro-name"
+          />
+          <div className="about-me">
+            <div className="about-me-label">
+              <div className="me-label">ABOUT ME</div>
+            </div>
+            <div className="about-me-text">
+              I'm a final year Computer Science student at Institut Teknologi
+              Bandung. I was born on October, 29th 2002. I'm born and raised in
+              Bandung. Welcome to my website!! I like to produce music, graphic
+              design, and draw. And in my spare time, I like to watch movies and
+              listen to music. I find many outdoor activities is relieving :D
+              <div className="porto">
+                <div className="projects">
+                  Projects
+                  <Row className="projects-type">
+                    <Col>
+                      <a href="/code">
+                        <img
+                          src="/code.png"
+                          width={60}
+                          className="icon-projects"
+                          alt="pic"
+                        />{" "}
+                        <div className="project-label">Code</div>
+                      </a>
+                    </Col>
+                    <Col>
+                      <a href="/design">
+                        <img
+                          src="/design.png"
+                          width={60}
+                          className="icon-projects"
+                          alt="pic"
+                        />{" "}
+                        <div className="project-label">Design</div>
+                      </a>
+                    </Col>
+                    <Col>
+                      <a href="/music">
+                        <img
+                          src="/music.png"
+                          width={60}
+                          className="icon-projects"
+                          alt="pic"
+                        />
+                        <div className="project-label">Music</div>
+                      </a>
+                    </Col>
+                  </Row>
+                </div>
+                <div className="blogs">
+                  Blogs
+                  <Row className="projects-type">
+                    <Col>
+                      {" "}
+                      <img
+                        src="/blog.png"
+                        width={60}
+                        className="icon-projects"
+                        alt="pic"
+                      />{" "}
+                      <div
+                        className="project-label"
+                        style={{ marginTop: "-5px" }}
+                      >
+                        Posts
+                      </div>
+                    </Col>
+                  </Row>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section >
-
-    </div >
+      </section>
+    </div>
   );
 };
 
