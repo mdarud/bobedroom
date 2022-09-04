@@ -39,6 +39,7 @@ const Music = () => {
                 href="https://soundcloud.com/darmakusuma"
                 title="daru"
                 target="_blank"
+                rel="noreferrer"
                 style={{ color: "#cccccc", textDecoration: "none" }}
               >
                 daru
@@ -48,6 +49,7 @@ const Music = () => {
                 href="https://soundcloud.com/darmakusuma/state"
                 title="State"
                 target="_blank"
+                rel="noreferrer"
                 style={{ color: "#cccccc", textDecoration: "none" }}
               >
                 State
@@ -82,6 +84,7 @@ const Music = () => {
                 href="https://soundcloud.com/darmakusuma"
                 title="daru"
                 target="_blank"
+                rel="noreferrer"
                 style={{ color: "#cccccc", textDecoration: "none" }}
               >
                 daru
@@ -91,9 +94,10 @@ const Music = () => {
                 href="https://soundcloud.com/darmakusuma/cheater-diorama"
                 title="State"
                 target="_blank"
+                rel="noreferrer"
                 style={{ color: "#cccccc", textDecoration: "none" }}
               >
-                State
+                cheater diorama
               </a>
             </div>
           </Col>
