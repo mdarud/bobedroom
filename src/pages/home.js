@@ -25,7 +25,7 @@ const Home = () => {
     <div className="scroll-container">
       <section >
         <div className="starter">
-          <img src='/logo-white.svg' className='logo' alt="pic" />
+          <img src='/logo-white.png' className='logo' alt="pic" />
           <Particles
             id="tsparticles"
             init={particlesInit}
