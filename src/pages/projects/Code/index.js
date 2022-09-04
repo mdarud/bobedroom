@@ -8,7 +8,7 @@ const Code = () => {
   return (
     <div>
       <Header />
-      <h2 className="heading-code">My Coding Projects:</h2>
+      <h2 className="heading-code">My Code Projects:</h2>
       <div style={{ padding: "20px" }}>
         <Row style={{ marginTop: "10px" }}>
           <Col>

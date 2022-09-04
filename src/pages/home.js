@@ -72,12 +72,12 @@ const Home = () => {
                     default: "destroy",
                   },
                   random: true,
-                  speed: 3,
+                  speed: 2,
                   straight: false,
                   trail: {
                     enable: true,
                     fillColor: "#000000",
-                    length: 4,
+                    length: 5,
                   },
                 },
                 number: {
@@ -165,7 +165,7 @@ const Home = () => {
       </section>
 
       <section id="main" className="main">
-        <div className="section-break"></div>
+        <div className="section-break"> scroll up! scroll up!</div>
         <div className="main-wrapper">
           <Header />
           <Highlights />
@@ -199,7 +199,8 @@ const Home = () => {
               Bandung. I was born on October, 29th 2002. I'm born and raised in
               Bandung. Welcome to my website!! I like to produce music, graphic
               design, and draw. And in my spare time, I like to watch movies and
-              listen to music. I find many outdoor activities is relieving :D
+              listen to music. I find many outdoor activities is relieving :D{" "}
+              <span>More in my Bio ➤</span>
               <div className="porto">
                 <div className="projects">
                   Projects

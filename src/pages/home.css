@@ -221,6 +221,12 @@ section {
   }
 }
 
+@media (max-width: 280px) {
+  .about-me-text {
+    padding: 0 20px 0 30px !important;
+  }
+}
+
 .about-me {
   display: flex;
   margin: auto;
@@ -304,8 +310,14 @@ a:hover {
 }
 
 .section-break {
+  text-align: center;
+  color: black;
+  margin: auto;
+  padding: 20px;
   height: 7vh;
+  font-family: "Coolvetica";
   background-color: rgba(255, 255, 255, 0.473);
+  mix-blend-mode: screen;
 }
 
 .section-break-footer {
