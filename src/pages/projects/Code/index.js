@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React from "react";
 import Header from "../../../components/header/header";
 import RepoCard from "react-repo-card";
 import { Row, Col } from "react-bootstrap";

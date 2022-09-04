@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React from "react";
 import Header from "../components/header/header";
 import Highlights from "../components/highlights/highlights";
 import TypeAnimation from "react-type-animation";
@@ -8,22 +8,6 @@ import "./home.css";
 import { Row, Col } from "react-bootstrap";
 
 const Home = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const [show, setShow] = useState(true);
-
-  const handleScroll = () => {
-    const position = window.scrollY;
-    console.log(position);
-    setScrollPosition(position);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   const particlesInit = React.useCallback(async (engine) => {
     console.log(engine);
@@ -41,10 +25,9 @@ const Home = () => {
     <div className="scroll-container">
       <section >
         <div className="starter">
-          <img src='/logo-white.svg' className={`${show ? 'logo' : 'logo mini'}`} />
+          <img src='/logo-white.svg' className='logo' alt="pic" />
           <Particles
             id="tsparticles"
-            className={`${!show && 'invisible'}`}
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
@@ -140,11 +123,11 @@ const Home = () => {
           />
         </div>
         <div className="social-media">
-          <a href="https://github.com/mdarud" target="_blank" className="icon"><img src="/github.png" width={32} /></a>
-          <a href="https://www.linkedin.com/in/muhammad-daru-darmakusuma/" target="_blank" className="icon"><img src="/linkedin.png" width={32} /></a>
-          <a href="https://www.instagram.com/drmksm/" target="_blank" className="icon"><img src="/instagram.svg" width={35} /></a>
-          <a href="https://soundcloud.com/darmakusuma" target="_blank" className="icon"><img src="/soundcloud.png" width={32} /></a>
-          <a href="https://open.spotify.com/user/217hkxsfr3gafn62eqj65p4gi?si=7fTNLgL6TmiLDsCvokhjqw&nd=1" target="_blank"><img src="/spotify.png" width={32} /></a>
+          <a href="https://github.com/mdarud" target="_blank" rel="noreferrer" className="icon"><img src="/github.png" alt="pic" width={32} /></a>
+          <a href="https://www.linkedin.com/in/muhammad-daru-darmakusuma/" target="_blank" rel="noreferrer" className="icon"><img src="/linkedin.png" alt="pic" width={32} /></a>
+          <a href="https://www.instagram.com/drmksm/" target="_blank" rel="noreferrer" className="icon"><img src="/instagram.svg" alt="pic" width={35} /></a>
+          <a href="https://soundcloud.com/darmakusuma" target="_blank" rel="noreferrer" className="icon"><img src="/soundcloud.png" alt="pic" width={32} /></a>
+          <a href="https://open.spotify.com/user/217hkxsfr3gafn62eqj65p4gi?si=7fTNLgL6TmiLDsCvokhjqw&nd=1" target="_blank" rel="noreferrer"><img src="/spotify.png" alt="pic" width={32} /></a>
         </div>
         <div className="instruction">Scroll Down!<p class="scrollto--arrow"><img src="/scroll-down.png" alt="scroll down arrow" /></p></div>
       </section >
@@ -180,15 +163,15 @@ const Home = () => {
               <div className="projects">
                 Projects
                 <Row className="projects-type">
-                  <Col><a href="/code"><img src="/code.png" width={60} className="icon-projects" /> <div className="project-label">Code</div></a></Col>
-                  <Col><a href="/design"><img src="/design.png" width={60} className="icon-projects" /> <div className="project-label">Design</div></a></Col>
-                  <Col><a href="/music"><img src="/music.png" width={60} className="icon-projects" /><div className="project-label">Music</div></a></Col>
+                  <Col><a href="/code"><img src="/code.png" width={60} className="icon-projects" alt="pic" /> <div className="project-label">Code</div></a></Col>
+                  <Col><a href="/design"><img src="/design.png" width={60} className="icon-projects" alt="pic" /> <div className="project-label">Design</div></a></Col>
+                  <Col><a href="/music"><img src="/music.png" width={60} className="icon-projects" alt="pic" /><div className="project-label">Music</div></a></Col>
                 </Row>
               </div>
               <div className="blogs">
                 Blogs
                 <Row className="projects-type">
-                  <Col> <img src="/blog.png" width={60} className="icon-projects" /> <div className="project-label" style={{ marginTop: "-5px" }}>Posts</div></Col>
+                  <Col> <img src="/blog.png" width={60} className="icon-projects" alt="pic" /> <div className="project-label" style={{ marginTop: "-5px" }}>Posts</div></Col>
                 </Row>
               </div>
             </div>
