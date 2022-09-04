@@ -1,0 +1,291 @@
+.intro {
+  font-family: "Coolvetica";
+  font-size: 2.5rem;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.intro-name {
+  font-family: "Odin";
+  display: flex;
+  margin: 0 auto;
+  background: #2d3436;
+  color: white;
+  font-size: 4rem;
+  font-weight: 800px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* All the snapping stuff */
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+.starter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instruction {
+  z-index: 999;
+  text-align: center;
+  font-family: "Coolvetica";
+  border-radius: 30px;
+  width: fit-content;
+  padding: 10px;
+  font-size: 30px;
+  align-items: center;
+  align-content: center;
+  margin: 5vh auto 2vh;
+  height: 5vh;
+  color: white;
+}
+
+.social-media {
+  background-color: white;
+  margin: -35vh auto 0;
+  height: fit-content;
+  text-align: center;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+.icon {
+  position: relative;
+  margin-right: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Boucing Arrow Animation */
+@keyframes arrowbounce {
+  from {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+@-moz-keyframes arrowbounce {
+  /* Firefox */
+  from {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+@-webkit-keyframes arrowbounce {
+  /* Safari and Chrome */
+  from {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+@-o-keyframes arrowbounce {
+  /* Opera */
+  from {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+.scrollto--arrow img {
+  animation: arrowbounce 1s alternate infinite;
+  -moz-animation: arrowbounce 1s alternate infinite;
+  -webkit-animation: arrowbounce 1s alternate infinite;
+  -o-animation: arrowbounce 1s alternate infinite;
+}
+
+.logo {
+  position: relative;
+  z-index: 1;
+  width: 25%;
+  margin: auto;
+  min-width: 273px;
+  padding: 20px;
+  border-radius: 30px;
+  height: auto;
+  mix-blend-mode: difference;
+  height: 100vh;
+}
+
+.logo-mini {
+  position: relative;
+  z-index: 999;
+  width: 25%;
+  margin: auto;
+}
+
+#tsparticles {
+  z-index: -1;
+}
+
+.main {
+  height: 100vh;
+  background-color: white;
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    font-size: 2rem !important;
+  }
+  .intro-name {
+    font-size: 2.15rem !important;
+  }
+  .me-label {
+    font-size: 14px !important;
+    border-radius: 30px !important;
+  }
+  .about-me-text {
+    margin: 20px auto !important;
+    font-family: "Coolvetica";
+    text-align: left;
+    font-size: 12px !important;
+    color: gray;
+    width: 75vw;
+    padding: 0 20px 0 20px !important;
+  }
+  .icon-projects {
+    width: 30px !important;
+    height: 30px !important;
+    margin-right: 5px !important;
+  }
+  .col {
+    flex: 0 0 !important;
+  }
+  .project-label {
+    text-align: center !important;
+  }
+  .porto {
+    margin: 5px auto 0 !important;
+    display: flex;
+  }
+}
+
+.about-me {
+  display: flex;
+  margin: auto;
+  height: 30%;
+}
+
+.about-me-text {
+  margin: 50px auto;
+  font-family: "Coolvetica";
+  text-align: left;
+  font-size: 20px;
+  color: gray;
+  width: 75vw;
+  padding: 0 60px 0 0;
+}
+
+.about-me-label {
+  padding: 10px;
+  margin: auto;
+  font-family: "Odin";
+  text-align: center;
+  color: white;
+  width: 25vw;
+}
+
+.me-label {
+  margin: auto;
+  padding: 20px;
+  border-radius: 40px;
+  background-color: #2d3436;
+  width: fit-content;
+  font-size: 30px;
+}
+
+.porto {
+  margin: 30px auto 0;
+  display: flex;
+}
+
+.projects {
+  color: #2d3436;
+  width: 50%;
+}
+
+.blogs {
+  color: #2d3436;
+  width: 50%;
+}
+
+.projects-type {
+  display: flex;
+  margin-top: 10px;
+}
+
+.icon-projects {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  text-align: center;
+}
+
+.project-label {
+  position: relative;
+  bottom: 0;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.col {
+  flex: 0.2 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2d3436;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #2d3436;
+}

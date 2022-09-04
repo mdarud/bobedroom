@@ -1,0 +1,63 @@
+.navbar-brand embed {
+  max-width: 100%;
+  height: 70px;
+  width: 137px;
+}
+
+.navbar {
+  font-family: "Coolvetica";
+  font-size: 1.16rem;
+  position: relative;
+  z-index: 0;
+}
+
+.contact {
+  background-color: #2d3436;
+  border-radius: 20px;
+  font-family: "Odin";
+  color: white;
+}
+
+.contact:hover {
+  background-color: gray;
+  border-radius: 20px;
+  font-family: "Odin";
+  color: white;
+}
+
+@media (min-width: 991px) {
+  .navbar-collapse {
+    margin-left: 30px;
+  }
+  .nav-link {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
+  .dropdown-menu {
+    text-align: center;
+  }
+
+  .contact {
+    background-color: #2d3436;
+    font-family: "Odin";
+    color: white;
+    margin-top: 10px;
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+}
