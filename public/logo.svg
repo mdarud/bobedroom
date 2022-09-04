@@ -14,6 +14,6 @@
       <line id="Line_2" data-name="Line 2" x1="1" y2="128" transform="translate(672.5 340.5)" fill="none" stroke="#2d3436" stroke-linecap="round" stroke-width="8"/>
     </g>
     <text id="Bo_s_Bedroom" data-name="Bo&apos;s
-Bedroom" transform="translate(1600 708)" fill="#2d3436" font-size="119" font-family="CoolveticaRg-Regular, Coolvetica" letter-spacing="-0.017em"><tspan x="0" y="0">Bo&apos;s</tspan><tspan x="0" y="143">Bedroom</tspan></text>
+Bedroom" transform="translate(1600 708)" fill="#2d3436" font-size="119" font-family="Coolvetica" letter-spacing="-0.017em"><tspan x="0" y="0">Bo&apos;s</tspan><tspan x="0" y="143">Bedroom</tspan></text>
   </g>
 </svg>
