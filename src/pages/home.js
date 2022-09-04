@@ -24,6 +24,7 @@ const Home = () => {
     <div className="scroll-container">
       <section>
         <div className="starter">
+          {/* <embed src="/blob.svg" className="blob" alt="pic" /> */}
           <embed src="/logo-white.svg" className="logo" alt="pic" />
           <Particles
             id="tsparticles"
@@ -200,7 +201,7 @@ const Home = () => {
               Bandung. Welcome to my website!! I like to produce music, graphic
               design, and draw. And in my spare time, I like to watch movies and
               listen to music. I find many outdoor activities is relieving :D{" "}
-              <span>More in my Bio ➤</span>
+              <span style={{ color: "black" }}>&nbsp; More in my Bio ➤</span>
               <div className="porto">
                 <div className="projects">
                   Projects
@@ -246,6 +247,7 @@ const Home = () => {
                         src="/blog.svg"
                         className="icon-projects"
                         alt="pic"
+                        style={{ marginTop: "-5px", marginBottom: "2px" }}
                       />{" "}
                       <div className="project-label">Posts</div>
                     </Col>

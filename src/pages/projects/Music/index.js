@@ -112,8 +112,8 @@ const Music = () => {
       </Container>
       <Container>
         <Row>Spotify</Row>
-        <Row xs={3} md={4} lg={4}>
-          <Col md={3}>
+        <Row xs={1} md={4} lg={4}>
+          <Col md={3} xs={12}>
             <iframe
               style={{ borderRadius: "12px" }}
               src="https://open.spotify.com/embed/playlist/1Kkr1DQwavs9lq4v0T6pLK?utm_source=generator"
@@ -125,7 +125,7 @@ const Music = () => {
               title="sur3r"
             ></iframe>
           </Col>
-          <Col md={3}>
+          <Col md={3} xs={12}>
             <iframe
               style={{ borderRadius: "12px" }}
               src="https://open.spotify.com/embed/playlist/1m63agN7loA1EyAtV4GMow?utm_source=generator"
@@ -137,7 +137,7 @@ const Music = () => {
               title="apple"
             ></iframe>
           </Col>
-          <Col md={3}>
+          <Col md={3} xs={12}>
             <iframe
               style={{ borderRadius: "12px" }}
               src="https://open.spotify.com/embed/playlist/5gDt1VSfAJYuY7gEZvJHXq?utm_source=generator"
@@ -149,7 +149,7 @@ const Music = () => {
               title="playground"
             ></iframe>
           </Col>
-          <Col md={3}>
+          <Col md={3} xs={12}>
             <iframe
               style={{ borderRadius: "12px" }}
               src="https://open.spotify.com/embed/playlist/07zteWVbqjGDMgnXnCRoHW?utm_source=generator"

@@ -9,6 +9,12 @@
   width: 100%;
 }
 
+.blob {
+  position: absolute;
+  top: 10px;
+  width: 10vw;
+}
+
 .intro-name {
   font-family: "Odin";
   display: flex;
@@ -180,7 +186,7 @@ section {
 
 @media (max-width: 768px) {
   .logo {
-    height: 98vh !important;
+    height: 97vh !important;
   }
   .intro {
     font-size: 2rem !important;
@@ -286,11 +292,14 @@ section {
   height: 60px;
   margin: auto;
   display: block;
+  filter: invert(20%) sepia(8%) saturate(538%) hue-rotate(146deg)
+    brightness(98%) contrast(99%);
 }
 
 .project-label {
   position: relative;
   bottom: 0;
+  color: #2d3436;
   text-align: center;
   margin-bottom: 10px;
 }
