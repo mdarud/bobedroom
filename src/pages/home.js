@@ -212,8 +212,7 @@ const Home = () => {
                     <Col>
                       <a href="/code">
                         <img
-                          src="/code.png"
-                          width={60}
+                          src="/code.svg"
                           className="icon-projects"
                           alt="pic"
                         />{" "}
@@ -223,8 +222,7 @@ const Home = () => {
                     <Col>
                       <a href="/design">
                         <img
-                          src="/design.png"
-                          width={60}
+                          src="/design.svg"
                           className="icon-projects"
                           alt="pic"
                         />{" "}
@@ -234,8 +232,7 @@ const Home = () => {
                     <Col>
                       <a href="/music">
                         <img
-                          src="/music.png"
-                          width={60}
+                          src="/music.svg"
                           className="icon-projects"
                           alt="pic"
                         />
@@ -250,17 +247,11 @@ const Home = () => {
                     <Col>
                       {" "}
                       <img
-                        src="/blog.png"
-                        width={60}
+                        src="/blog.svg"
                         className="icon-projects"
                         alt="pic"
                       />{" "}
-                      <div
-                        className="project-label"
-                        style={{ marginTop: "-5px" }}
-                      >
-                        Posts
-                      </div>
+                      <div className="project-label">Posts</div>
                     </Col>
                   </Row>
                 </div>
@@ -268,6 +259,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <div className="section-break-footer"></div>
       </section>
     </div>
   );
