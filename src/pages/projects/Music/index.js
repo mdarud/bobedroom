@@ -61,7 +61,7 @@ const Music = () => {
               scrolling="no"
               frameBorder="no"
               allow="autoplay"
-              title="state"
+              title="cheater"
               src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/994238299&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
             ></iframe>
             <div
@@ -118,6 +118,7 @@ const Music = () => {
               frameBorder={0}
               allowfullscreen={true}
               allow="encrypted-media"
+              title="sur3r"
             ></iframe>
           </Col>
           <Col md={3}>
@@ -129,6 +130,7 @@ const Music = () => {
               frameBorder={0}
               allowfullscreen={true}
               allow="encrypted-media"
+              title="apple"
             ></iframe>
           </Col>
           <Col md={3}>
@@ -140,6 +142,7 @@ const Music = () => {
               frameBorder={0}
               allowfullscreen={true}
               allow="encrypted-media"
+              title="playground"
             ></iframe>
           </Col>
           <Col md={3}>
@@ -151,6 +154,7 @@ const Music = () => {
               frameBorder={0}
               allowfullscreen={true}
               allow="encrypted-media"
+              title="tiny"
             ></iframe>
           </Col>
         </Row>
