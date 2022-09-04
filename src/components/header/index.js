@@ -4,7 +4,13 @@ import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 
 const Header = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      bg="light"
+      variant="light"
+      className="sticky-top"
+    >
       <Container>
         <Navbar.Brand href="/">
           <embed src="/logo.svg" />
