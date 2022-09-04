@@ -1,3 +1,13 @@
+.heading-code {
+  font-family: "Odin";
+  font-size: 32px;
+  color: white;
+  background-color: #2d3436;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
 .repo-card {
   white-space: nowrap;
   overflow: hidden;

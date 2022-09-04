@@ -179,6 +179,9 @@ section {
 }
 
 @media (max-width: 768px) {
+  .logo {
+    height: 98vh !important;
+  }
   .intro {
     font-size: 2rem !important;
   }
@@ -212,6 +215,9 @@ section {
   .porto {
     margin: 5px auto 0 !important;
     display: flex;
+  }
+  .section-break {
+    height: 7vh !important;
   }
 }
 
@@ -273,13 +279,13 @@ section {
   width: 60px;
   height: 60px;
   margin: auto;
-  text-align: center;
+  display: block;
 }
 
 .project-label {
   position: relative;
   bottom: 0;
-  text-align: left;
+  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -298,11 +304,17 @@ a:hover {
 }
 
 .section-break {
-  height: 5vh;
+  height: 7vh;
   background-color: rgba(255, 255, 255, 0.473);
 }
 
 .section-break-footer {
   height: 8vh;
   background-color: white;
+}
+
+.scroll-down-label {
+  position: relative;
+  width: fit-content;
+  z-index: 99;
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../components/header/header";
-import Highlights from "../components/highlights/highlights";
+import Header from "../components/header";
+import Highlights from "../components/highlights";
 import TypeAnimation from "react-type-animation";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
@@ -35,7 +35,7 @@ const Home = () => {
                   value: "#2d3436",
                 },
               },
-              fpsLimit: 60,
+              fpsLimit: 120,
               interactivity: {
                 events: {
                   onClick: {
@@ -62,13 +62,6 @@ const Home = () => {
                 color: {
                   value: "#ffffff",
                 },
-                links: {
-                  color: "#2d3436",
-                  distance: 200,
-                  enable: false,
-                  opacity: 0.9,
-                  width: 3,
-                },
                 collisions: {
                   enable: true,
                 },
@@ -84,12 +77,12 @@ const Home = () => {
                   trail: {
                     enable: true,
                     fillColor: "#000000",
-                    length: 5,
+                    length: 4,
                   },
                 },
                 number: {
                   value: 0,
-                  limit: 250,
+                  limit: 220,
                 },
                 opacity: {
                   value: 0.8,
@@ -98,7 +91,7 @@ const Home = () => {
                   type: "circle",
                 },
                 size: {
-                  value: { min: 5, max: 20 },
+                  value: { min: 5, max: 25 },
                 },
               },
               detectRetina: true,
@@ -106,14 +99,14 @@ const Home = () => {
                 direction: "none",
                 rate: {
                   delay: 0.5,
-                  quantity: 10,
+                  quantity: 15,
                 },
                 position: {
                   x: 50,
                   y: 50,
                 },
                 size: {
-                  width: 5,
+                  width: 10,
                   height: 5,
                 },
               },
@@ -161,12 +154,14 @@ const Home = () => {
             <img src="/spotify.png" alt="pic" width={32} />
           </a>
         </div>
-        <div className="instruction">
-          Scroll Down!
-          <p class="scrollto--arrow">
-            <img src="/scroll-down.png" alt="scroll down arrow" />
-          </p>
-        </div>
+        <a href="#main" className="scroll-down-label">
+          <div className="instruction">
+            Scroll Down!
+            <p class="scrollto--arrow">
+              <img src="/scroll-down.png" alt="scroll down arrow" />
+            </p>
+          </div>
+        </a>
       </section>
 
       <section id="main" className="main">

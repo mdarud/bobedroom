@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../../../components/header/header";
+import Header from "../../../components/header";
 
 const Design = () => {
-    return (<Header />);
-}
+  return <Header />;
+};
 
 export default Design;
